@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Blooms | Bloom & Sage</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#556B55">
+    <link rel="apple-touch-icon" href="https://placehold.co/192x192/556B55/ffffff/png?text=B%26S">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header (Same as Index) -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Bloom <span>&</span> Sage</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="subscriptions.html">Subscriptions</a></li>
+                    <li><a href="index.html#about">Our Story</a></li>
+                    <li><a href="index.html#contact" class="nav-btn">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Shop All Blooms</h1>
+                <p>Hand-picked, seasonal arrangements for every space.</p>
+            </div>
+        </section>
+
+        <!-- Shop Layout -->
+        <div class="container shop-layout section-padding">
+            
+            <!-- Sidebar Filters -->
+            <aside class="shop-sidebar">
+                <div class="filter-group">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">All Flowers</a></li>
+                        <li><a href="#">Fresh Bouquets</a></li>
+                        <li><a href="#">Dried Flowers</a></li>
+                        <li><a href="#">Potted Plants</a></li>
+                        <li><a href="#">Vases & Care</a></li>
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <h3>Price</h3>
+                    <ul>
+                        <li><a href="#">Under $50</a></li>
+                        <li><a href="#">$50 - $100</a></li>
+                        <li><a href="#">$100 - $200</a></li>
+                        <li><a href="#">Luxury ($200+)</a></li>
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <h3>Occasion</h3>
+                    <ul>
+                        <li><a href="#">Birthday</a></li>
+                        <li><a href="#">Sympathy</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Just Because</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Product List -->
+            <section class="shop-grid-container">
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="badge">Bestseller</span>
+                            <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=600&q=80" alt="Pink Tulips">
+                        </div>
+                        <div class="product-details">
+                            <h3>The Blush Tulip</h3>
+                            <span class="price">$45.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1606246551522-61f9ed248bd7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="White Roses">
+                        </div>
+                        <div class="product-details">
+                            <h3>Classic White Roses</h3>
+                            <span class="price">$65.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="badge new">New</span>
+                            <img src="https://images.unsplash.com/photo-1595231776515-ddffb1f4eb73?auto=format&fit=crop&w=600&q=80" alt="Wildflower Mix">
+                        </div>
+                        <div class="product-details">
+                            <h3>Meadow Mix</h3>
+                            <span class="price">$50.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=600&q=80" alt="Eucalyptus Bundle">
+                        </div>
+                        <div class="product-details">
+                            <h3>Fresh Eucalyptus</h3>
+                            <span class="price">$25.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 5 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1575178114667-c8a832c61f45?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Peonies">
+                        </div>
+                        <div class="product-details">
+                            <h3>Spring Peonies</h3>
+                            <span class="price">$55.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 6 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1668365197717-8616bb53bc34?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dried Bouquet">
+                        </div>
+                        <div class="product-details">
+                            <h3>The Rustic Dried</h3>
+                            <span class="price">$40.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 7 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1668073437039-56653719d1fd?q=80&w=1192&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hydrangea">
+                        </div>
+                        <div class="product-details">
+                            <h3>Blue Hydrangea</h3>
+                            <span class="price">$48.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 8 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="badge">Sale</span>
+                            <img src="https://images.unsplash.com/photo-1687299443525-96f91e129053?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Orchid">
+                        </div>
+                        <div class="product-details">
+                            <h3>White Orchid Pot</h3>
+                            <span class="price"><del>$70.00</del> $55.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 9 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&w=600&q=80" alt="Rose Box">
+                        </div>
+                        <div class="product-details">
+                            <h3>Rose Hat Box</h3>
+                            <span class="price">$120.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <span class="active">1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">&rarr;</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer (Same as Index) -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Bloom & Sage</h3>
+                <p>123 Botanical Avenue<br>Portland, OR 97204</p>
+                <p>hello@bloomsage.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="shop.html">All Flowers</a></li>
+                    <li><a href="subscriptions.html">Subscriptions</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Delivery Info</a></li>
+                    <li><a href="#">Flower Care</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bloom & Sage. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Service Worker script for PWA -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js');
+            });
+        }
+    </script>
+</body>
+</html>
