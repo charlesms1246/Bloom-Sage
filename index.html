@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Sage | Artisan Florist</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#556B55">
+    <!-- Using placeholder for Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="https://placehold.co/192x192/556B55/ffffff/png?text=B%26S">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo">Bloom <span>&</span> Sage</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#categories">Occasions</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#contact" class="nav-btn">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>Let nature speak for you.</h1>
+                    <p>Hand-tied artisan bouquets sourced from local growers. Delivered fresh daily.</p>
+                    <a href="#products" class="cta-button">Shop Fresh Blooms</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section id="categories" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Shop by Category</h2>
+                    <p>Curated collections for every moment.</p>
+                </div>
+                <div class="category-grid">
+                    <div class="cat-card">
+                        <img src="https://images.unsplash.com/photo-1596073419667-9d77d59f033f?auto=format&fit=crop&w=600&q=80" alt="Fresh Flowers">
+                        <div class="cat-info">
+                            <h3>Signature Bouquets</h3>
+                            <a href="#">View Collection &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80" alt="House Plants">
+                        <div class="cat-info">
+                            <h3>Potted Plants</h3>
+                            <a href="#">View Collection &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80" alt="Wedding Flowers">
+                        <div class="cat-info">
+                            <h3>Weddings & Events</h3>
+                            <a href="#">View Collection &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section id="products" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Fresh Arrivals</h2>
+                    <p>Our florists' picks for this week.</p>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="badge">Bestseller</span>
+                            <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=600&q=80" alt="Pink Tulips">
+                        </div>
+                        <div class="product-details">
+                            <h3>The Blush Tulip</h3>
+                            <span class="price">$45.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1606246551522-61f9ed248bd7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="White Roses">
+                        </div>
+                        <div class="product-details">
+                            <h3>Classic White Roses</h3>
+                            <span class="price">$65.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="badge new">New</span>
+                            <img src="https://images.unsplash.com/photo-1595231776515-ddffb1f4eb73?auto=format&fit=crop&w=600&q=80" alt="Wildflower Mix">
+                        </div>
+                        <div class="product-details">
+                            <h3>Meadow Mix</h3>
+                            <span class="price">$50.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=600&q=80" alt="Eucalyptus Bundle">
+                        </div>
+                        <div class="product-details">
+                            <h3>Fresh Eucalyptus</h3>
+                            <span class="price">$25.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 5 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1575178114667-c8a832c61f45?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Peonies">
+                        </div>
+                        <div class="product-details">
+                            <h3>Spring Peonies</h3>
+                            <span class="price">$55.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 6 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1668365197717-8616bb53bc34?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dried Bouquet">
+                        </div>
+                        <div class="product-details">
+                            <h3>The Rustic Dried</h3>
+                            <span class="price">$40.00</span>
+                            <button class="add-btn">Add to Basket</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1584680234771-419d20c5d57d?auto=format&fit=crop&w=800&q=80" alt="Florist arranging flowers">
+                </div>
+                <div class="about-text">
+                    <h2>Artistry in Every Petal</h2>
+                    <p>Founded in 2015, Bloom & Sage began with a simple mission: to bring the calming beauty of the outdoors into modern homes. We believe flowers aren't just for special occasions—they are a daily reminder of nature's elegance.</p>
+                    <p>We partner exclusively with sustainable farms to ensure every stem is as kind to the earth as it is beautiful to the eye.</p>
+                    <br>
+                    <a href="#" class="text-link">Read our full story &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section-padding bg-sage text-white">
+            <div class="container text-center">
+                <h2>Loved by Locals</h2>
+                <div class="testimonials-grid">
+                    <div class="quote-card">
+                        <p>"The most beautiful arrangement I have ever received. The packaging was eco-friendly and the flowers lasted two weeks!"</p>
+                        <cite>— Sarah J.</cite>
+                    </div>
+                    <div class="quote-card">
+                        <p>"Bloom & Sage is my go-to for gifts. Their attention to detail and color palettes are simply unmatched."</p>
+                        <cite>— Michael T.</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section id="newsletter" class="section-padding">
+            <div class="container newsletter-container">
+                <h2>Join the Garden Club</h2>
+                <p>Sign up for care tips, new arrivals, and 10% off your first order.</p>
+                <form class="newsletter-form" onsubmit="return false;">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Bloom & Sage</h3>
+                <p>123 Botanical Avenue<br>Portland, OR 97204</p>
+                <p>hello@bloomsage.com<br>(555) 123-4567</p>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">All Flowers</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Corporate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Delivery Info</a></li>
+                    <li><a href="#">Flower Care</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bloom & Sage. All rights reserved. Designed for portfolio purposes.</p>
+        </div>
+    </footer>
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./app.js')
+                    .then(reg => console.log('Service Worker Registered!', reg))
+                    .catch(err => console.log('Service Worker registration failed: ', err));
+            });
+        }
+    </script>
+
+</body>
+</html>
