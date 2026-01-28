@@ -21,6 +21,11 @@
     <header class="site-header">
         <div class="container header-container">
             <a href="index.html" class="logo">Bloom <span>&</span> Sage</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="main-nav">
                 <ul>
                     <li><a href="shop.html">Shop</a></li>
@@ -174,6 +179,39 @@
                 navigator.serviceWorker.register('./sw.js');
             });
         }
+    </script>
+    
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+            const body = document.body;
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    mainNav.classList.toggle('active');
+                    
+                    // Prevent body scroll when menu is open
+                    if (mainNav.classList.contains('active')) {
+                        body.style.overflow = 'hidden';
+                    } else {
+                        body.style.overflow = '';
+                    }
+                });
+                
+                // Close menu when clicking on a nav link
+                const navLinks = document.querySelectorAll('.main-nav a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        mainNav.classList.remove('active');
+                        body.style.overflow = '';
+                    });
+                });
+            }
+        });
     </script>
 </body>
 </html>
